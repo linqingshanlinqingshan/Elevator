@@ -31,8 +31,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     FrameLayout flt_container;
 
-    String url_bending_elevator = "file:///android_asset/bending_elevator/index.html";  //转角
-    String straight_elevator = "file:///android_asset/straight_elevator/index.html";    //直角
+//    String url_bending_elevator = "file:///android_asset/bending_elevator/index.html";  //转角
+    String url_bending_elevator = "https://baijiahao.baidu.com/s?id=1625419997422125773&wfr=spider&for=pc";  //转角
+//    String straight_elevator = "file:///android_asset/straight_elevator/index.html";    //直角
+    String straight_elevator = "https://baijiahao.baidu.com/s?id=1621177319452544751&wfr=spider&for=pc";    //直角
 
 
     @Override
@@ -123,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
 //                view.loadUrl(url);
-                return false;
+                return true;
             }
 
             @Override
@@ -221,7 +223,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
 //                    view.loadUrl(url);
-                    return false;
+                    return true;
                 }
 
                 @Override
