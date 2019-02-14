@@ -8,44 +8,51 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <WebView
-            android:id="@+id/web_view_left"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
 
-        <WebView
-            android:id="@+id/web_view_right"
-            android:visibility="gone"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            <WebView
+                android:id="@+id/web_view_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
+            <WebView
+                android:id="@+id/web_view_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </FrameLayout>
 
         <LinearLayout
-            android:background="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:background="#ffffff"
             android:orientation="horizontal"
             android:padding="10dp">
 
             <TextView
+                android:id="@+id/tv_left"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="left"
+                android:text="转角"
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/tv_right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="right"
+                android:text="直角"
                 android:textSize="25sp" />
 
         </LinearLayout>
