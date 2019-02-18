@@ -26,6 +26,8 @@ public class MainActivity extends BaseActivity {
 //    WebView web_view_side;
 //    WebView web_view_straight;
 
+    TextView tv_color;
+
     TextView tv_next;
 
     TextView tv_left;
@@ -46,6 +48,7 @@ public class MainActivity extends BaseActivity {
     String straight_elevator = "file:///android_asset/straight_elevator/index.html";    //直角
     String straight_platform = "file:///android_asset/straight_platform/index.html";    //直平台
     String side_platform = "file:///android_asset/side_platform/index.html";            //侧平台
+    String web = "file:///android_asset/web/index.html";            //
 
 
     @Override
@@ -62,6 +65,8 @@ public class MainActivity extends BaseActivity {
 //        llt_side = findViewById(R.id.llt_side);
 //        llt_straight = findViewById(R.id.llt_straight);
 
+        tv_color = findViewById(R.id.tv_color);
+
         tv_next = findViewById(R.id.tv_next);
 
         tv_left = findViewById(R.id.tv_left);
@@ -75,6 +80,8 @@ public class MainActivity extends BaseActivity {
 //        tv_side.setOnClickListener(this);
 //        tv_straight.setOnClickListener(this);
         tv_next.setOnClickListener(this);
+
+        tv_color.setOnClickListener(this);
 
         tv_left.setTextColor(getResources().getColor(R.color.color_Black));
         tv_right.setTextColor(getResources().getColor(R.color.color_Gray));
@@ -100,11 +107,11 @@ public class MainActivity extends BaseActivity {
                 Log.d("tag", "----->width=" + width);
                 Log.d("tag", "----->height=" + height);
 
-                startActivity(new Intent(MainActivity.this, TwoActivity.class));
+//                startActivity(new Intent(MainActivity.this, TwoActivity.class));
 
-                MainActivity.this.finish();
+//                MainActivity.this.finish();
 
-//                showWebView();
+                showWebView();
             }
         });
 
@@ -135,7 +142,7 @@ public class MainActivity extends BaseActivity {
         webSettings_left.setAllowUniversalAccessFromFileURLs(true);
 
 
-        web_view_left.loadUrl(url_bending_elevator);
+        web_view_left.loadUrl(web);
 
 
         leftDialog = new ProgressDialog(this);
@@ -190,7 +197,11 @@ public class MainActivity extends BaseActivity {
 
             case R.id.tv_next:
 
-                startActivity(new Intent(this, TwoActivity.class));
+//                startActivity(new Intent(this, TwoActivity.class));
+
+                break;
+
+            case R.id.tv_color:
 
                 break;
         }
