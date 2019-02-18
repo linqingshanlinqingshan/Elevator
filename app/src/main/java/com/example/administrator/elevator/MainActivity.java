@@ -84,7 +84,6 @@ public class MainActivity extends BaseActivity {
 
         web_view_left = new WebView(getApplicationContext());
 
-
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         ViewTreeObserver vto = flt_container.getViewTreeObserver();
