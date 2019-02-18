@@ -21,6 +21,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".TwoActivity" />
+
 
         <!--<provider-->
             <!--android:name="android.support.v4.content.FileProvider"-->
