@@ -107,11 +107,12 @@ public class MainActivity extends BaseActivity {
                 Log.d("tag", "----->width=" + width);
                 Log.d("tag", "----->height=" + height);
 
-//                startActivity(new Intent(MainActivity.this, TwoActivity.class));
+//                showWebView();
 
-//                MainActivity.this.finish();
+                startActivity(new Intent(MainActivity.this, ThreeActivity.class));
 
-                showWebView();
+                MainActivity.this.finish();
+
             }
         });
 

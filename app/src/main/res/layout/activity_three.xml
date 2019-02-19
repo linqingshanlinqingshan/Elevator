@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tencent.smtt.sdk.WebView
+
+        android:id="@+id/web_view_tencent"
+
+        android:visibility="gone"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/llt_container"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/llt_left"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+</LinearLayout>
